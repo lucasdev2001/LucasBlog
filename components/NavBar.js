@@ -11,7 +11,7 @@ export default function NavBar() {
       <div className="navbar-nav ">
       <Link href="/"><a className="nav-link" >Home</a></Link>
       <Link href="/compose"><a className="nav-link">Compose</a></Link>
-      <a href="https://wa.me/5561985891725" target="_blank" className="nav-link">Contact</a>
+      <a href="https://wa.me/5561985891725" className="nav-link">Contact</a>
       </div>
     </div>
   </div>

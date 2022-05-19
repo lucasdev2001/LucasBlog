@@ -3,6 +3,7 @@ import Header from '../components/Header';
 import NavBar from '../components/NavBar';
 import dbConnect from '../lib/dbConnect';
 import BlogPost from '../models/BlogPost';
+import Script from 'next/script'
 
 function Home( { data }) {
 
@@ -19,7 +20,7 @@ function Home( { data }) {
         </div>
         </div>
       </main>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossOrigin="anonymous"></script>
+      <Script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></Script>
     </>
   )
 }

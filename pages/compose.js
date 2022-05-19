@@ -2,6 +2,8 @@ import { useState } from 'react'
 import { useRouter } from 'next/router'
 import NavBar from '../components/NavBar';
 import Form from '../components/Form';
+import Script from 'next/script'
+
 export default function Compose() {
     const router = useRouter();
     const [form,setForm] = useState({
