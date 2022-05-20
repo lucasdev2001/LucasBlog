@@ -48,6 +48,8 @@ export default function Edit({ post }) {
        
         putData(form);
         e.preventDefault();
+        document.getElementById("spinner").removeAttribute("hidden");
+        
         
         
 
@@ -92,6 +94,7 @@ export default function Edit({ post }) {
                      />
 
             </div>
+            <div className="d-flex justify-content-center bg-dark"><div  className="spinner-border text-success" hidden role="status" id='spinner'></div></div>
                             
 
             <footer className="bg-dark footer mt-auto py-4 bg-light">

@@ -25,6 +25,7 @@ export default function Compose() {
     const handleSubmit = (e) => {
         e.preventDefault();
         postData(form);
+        document.getElementById("spinner").removeAttribute("hidden");
        
 
     }
@@ -72,6 +73,7 @@ export default function Compose() {
                                 </figcaption>
                             </figure>
                         </div>
+                        
                     </header>
                 </div>
                 <div  className="col-12">
@@ -80,6 +82,7 @@ export default function Compose() {
                         <Form Change ={handleChange} Sub = {handleSubmit} hidden ={ true } buttonMessage = {"All done !"} />
                         </div>
                     </main>
+                    <div className="d-flex justify-content-center"><div  className="spinner-border text-success" hidden  role="status" id='spinner'></div></div>
                 </div>
                 <div  className="col-12">
                     <footer  className="p-5 mb-5">
@@ -92,9 +95,7 @@ export default function Compose() {
         </div>
             
         
-
-        
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossOrigin="anonymous"></script>
+        <Script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></Script>
         </>
     )
 }
